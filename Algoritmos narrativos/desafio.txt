@@ -1,0 +1,21 @@
+declarar a variavel x do tipo real
+declarar a variavel y do tipo real
+declarar a variavel r do tipo real
+
+informar o valor da variavel x e salvar na variavel numero1 x = 10
+informar o valor da variavel y e salvar na variavel numero2 y = 5
+
+somar a variavel x com a variavel y e salvar o valor na variavel r 
+subtrair a variavel y da variavel x e salvar o valor na variavel r
+somar a variavel x o numero de vezes informado na variavael y e salvar o valor na variavel r
+
+subtrair a váriavel y da variavel x enquanto a variável x for maior ou igual a 0 e salvar o valor do número de vezes subtraidos na variavel r
+
+r = 10 - 5 = 5 (1)
+r = 5 - 5 = 0  (2)
+r = 2
+
+
+
+
+

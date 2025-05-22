@@ -1,0 +1,47 @@
+1) Descreva os princípios que servem de base para a chamada Lógica Aristotélica.
+
+	Se baseia em dois principios:
+		A lei da não contradição, segundo a qual não se pode dizer que uma afirmação é verdadeira e falsa ao mesmo tempo.
+		A lei do terceiro excluído, em que qualquer afirmação "P" ou "não-P" é verdadeira.
+
+2) Analise as seguintes expressões:
+	“Preciso viajar com meu carro.”
+	“Meu carro está com problema mecânico.”
+	“Logo, não posso viajar com meu carro.”
+   Essa sequência pode ser considerada um exemplo de silogismo do ponto de vista de Aristóteles?
+
+	Pode ser considera sim um silogismo do ponto de vista de Artistóteles pois é um conjunto de 3 expressões onde a terceira é a conclusão que é possível alcançar devido 	as primeiras preposições.
+
+3) Explique a diferença entre lógica formal e lógica material.
+
+	Na lógica formal, existe uma grande preocupação com a estrutura do raciocínio, trabalhando-se com a relação entre conceitos para provar declarações. Já a lógica material trabalha com as operações do pensamento.
+
+
+4) Um computador, mesmo sendo um equipamento eletrônico, se diferencia dos demais por causa de uma característica peculiar. Aponte qual é essa característica e descreva o que ela representa.
+	A diferença é que ele é programável, ele tem um programa em sua memória que trabalha em cima de entrada de dados, processamento dos dados e a saida após o processamento dos dados.
+
+5) Descreva as técnicas empregadas no desenvolvimento de um programa de computador, analisando a vantagem e desvantagem de cada uma.
+	
+	As técnicas mais conhecidas e utilizadas no desenvolvimento de programas de computador são o algoritmo e o diagrama de blocos. O algoritmo pode ser entendido como uma descrição textual de uma solução para um determinado problema. O diagrama de blocos se caracteriza pela utilização de símbolos gráficos que representam um processo ou ação, que são ligados por meio de setas que indicam a possível trajetória do fluxo.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1)Por que é difícil programar em linguagem Assembly? 
+
+	 As instruções binárias são representadas por palavras ou siglas genericamente denominadas de mnemônicos. Ela é uma linguagem de baixo nível ou seja muito mais próxima da máquina.
+
+2)Aponte as diferenças entre código-fonte, arquivo objeto e programa executável.
+	
+	 Código-fonte, designa o texto escrito numa linguagem de programação e que pode ser lido por qualquer pessoa, mesmo quem não sabe programar. Esse texto segue as regras impostas pela linguagem, como sintaxe dos comandos e funções. Arquivos objetos são uma versão intermediária entre o código-fonte e o código executável. Programa executável, consiste numa sequência de instruções em linguagem de máquina (códigos binários) inteligível ao computador e muito difícil (ou quase impossível) de ser entendido por um ser humano.
+
+3)Descreva o processo de compilação de um código-fonte para geração de um programa executável.
+
+	O processo de compilação do código-fonte para código executável compreende dois passos, sendo uma geração de arquivos objetos e outro a ligação desses arquivos com as rotinas das bibliotecas de funções da linguagem.
+
+4)Pesquise na Internet quais linguagens são compiladas e quais são interpretadas
+
+	Compiladas puras são o C, o C++, o Erlang, o Haskell, o Rust e o Go
+	linguagens interpretadas comuns são o PHP, o Ruby, o Python e o JavaScript
+
+
+
