@@ -9,7 +9,7 @@ Var
 
    numero, soma, menor_valor, media : real
    decisao : caracter
-   i : inteiro
+   i, par : inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -21,6 +21,10 @@ Inicio
    soma <- soma + numero
    i <- 1
 
+   se numero mod 2 = 0 entao
+      par <- par + 1
+   fimse
+
    escreva("Quer continuar? ")
    leia(decisao)
 
@@ -28,7 +32,11 @@ Inicio
       repita
          escreva("Informe um número: ")
          leia(numero)
-         
+
+         se numero mod 2 = 0 entao
+            par <- par + 1
+         fimse
+
          i <- i + 1
 
          se numero < menor_valor entao
@@ -46,7 +54,8 @@ Inicio
 
    limpatela
 
-   escreval("A somatória entre os valores informados é", soma)
-   escreval("O menor valor informado foi", menor_valor)
-   escreval("A média dos valores informados é", media)
+   escreval(" A somatória entre os valores informados é", soma)
+   escreval(" O menor valor informado foi", menor_valor)
+   escreval(" A média dos valores informados é", media)
+   escreva(par, " números são pares")
 Fimalgoritmo
