@@ -1,0 +1,1 @@
+Esse repositório tem como objetivo reunir todo o conteúdo que estudei durante o tempo de 1 ano e meio do curso técnico de desenvolvimento de sistemas do Senac Minas em Pouso Alegre - Minas Gerais
