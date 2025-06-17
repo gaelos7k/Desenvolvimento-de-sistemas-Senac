@@ -34,6 +34,8 @@ let pessoas = [
     eletricista1 = new Eletricista('Matheus', 25, 'Campinas')
 ]
 
+//Certo seria separar em duas listas, mas como tudo foi teste coloquei os eletricistas na lista de pessoas também
+
 pessoas.pop()
 
 pessoas.push(
