@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício - Objeto e Classe em JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f0f0f0;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 10px 0;
+      width: 100%;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 15px;
+      background-color: #e0ffe0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Criação de Pessoa (Objeto)</h2>
+    
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite o nome">
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" placeholder="Digite a idade">
+
+    <button onclick="criarPessoa()">Criar Pessoa</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+    // Definindo a classe Pessoa
+    class Pessoa {
+      constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+      }
+
+      saudacao() {
+        return `Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`;
+      }
+    }
+
+    function criarPessoa() {
+      // Pegando valores dos inputs
+      const nome = document.getElementById('nome').value;
+      const idade = document.getElementById('idade').value;
+
+      if (!nome || !idade) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      // Criando objeto
+      const novaPessoa = new Pessoa(nome, idade);
+
+      // Exibindo no HTML
+      document.getElementById('resultado').innerText = novaPessoa.saudacao();
+    }
+  </script>
+</body>
+</html>
