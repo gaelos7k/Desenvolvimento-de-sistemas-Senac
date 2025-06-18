@@ -1,16 +1,24 @@
 class Pessoa {
+
+    _nome;   //Atributo protegido para que clsse filha possa herdar da classe pai
+    //#nome; //Atributo privado que só pode ser acessado na classe implementada    
+
     constructor(nome, idade, cidade) {
-        this.nome = nome;
+        this._nome = nome;
         this.cidade = cidade;
         this.idade = idade;
     }
 
+    getNome (){
+        return this._nome
+    }
+
     mostrarInfo() {
-        console.log(`NOME: ${this.nome} | IDADE: ${this.idade} | CIDADE ${this.cidade}`);
+        console.log(`NOME: ${this._nome} | IDADE: ${this.idade} | CIDADE ${this.cidade}`);
     }
 
     saudacao() {
-        console.log(`Olá me chamo ${this.nome}, tenho ${this.idade} anos e moro em ${this.cidade}!`);
+        console.log(`Olá me chamo ${this._nome}, tenho ${this.idade} anos e moro em ${this.cidade}!`);
     }
 }
 
@@ -22,7 +30,7 @@ class Eletricista extends Pessoa {
     }
 
     saudacao() {
-        console.log(`Olá me chamo ${this.nome}, tenho ${this.idade} anos e moro em ${this.cidade} e trabalho como ${this.profissao}!`);
+        console.log(`Olá me chamo ${this._nome}, tenho ${this.idade} anos e moro em ${this.cidade} e trabalho como ${this.profissao}!`);
     }
 }
 
