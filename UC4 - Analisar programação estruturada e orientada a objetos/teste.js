@@ -1,7 +1,7 @@
 class Pessoa {
 
-    _nome;   //Atributo protegido para que clsse filha possa herdar da classe pai
-    //#nome; //Atributo privado que só pode ser acessado na classe implementada    
+    _nome;      //Atributo protegido para que clsse filha possa herdar da classe pai
+    //#nome;    //Atributo privado que só pode ser acessado na classe implementada    
 
     constructor(nome, idade, cidade) {
         this._nome = nome;
