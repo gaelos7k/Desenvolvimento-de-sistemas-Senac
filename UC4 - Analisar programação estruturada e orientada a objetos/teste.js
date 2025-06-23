@@ -1,6 +1,6 @@
 class Pessoa {
 
-    _nome;      //Atributo protegido para que clsse filha possa herdar da classe pai
+    _nome;      //Atributo protegido para que classe filha possa herdar da classe pai
     //#nome;    //Atributo privado que só pode ser acessado na classe implementada    
 
     constructor(nome, idade, cidade) {
@@ -9,7 +9,7 @@ class Pessoa {
         this.idade = idade;
     }
 
-    getNome (){
+    getNome() {
         return this._nome
     }
 
@@ -44,11 +44,11 @@ let pessoas = [
 
 //Certo seria separar em duas listas, mas como tudo foi teste coloquei os eletricistas na lista de pessoas também
 
-pessoas.pop()
+pessoas.pop();
 
 pessoas.push(
     eletricista2 = new Eletricista('Ryan', 23, 'Bahia')
-)
+);
 
 for (let i = 0; i < pessoas.length; i++) {
     console.log(pessoas[i].saudacao());
