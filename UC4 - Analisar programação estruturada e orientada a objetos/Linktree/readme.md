@@ -1,0 +1,1 @@
+Simple HTML and CSS personal page.
