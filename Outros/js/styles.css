@@ -1,0 +1,22 @@
+#title {
+    color: aqua;
+}
+
+#user-data {
+    border-color: blue;
+}
+
+button {
+    margin-top: 10px;
+}
+
+h3{
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    border: 10px solid black;
+    border-width: 10px;
+    border-radius: 10px;
+}
