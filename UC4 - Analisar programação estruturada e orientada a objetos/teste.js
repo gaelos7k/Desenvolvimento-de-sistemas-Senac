@@ -51,5 +51,5 @@ pessoas.push(
 );
 
 for (let i = 0; i < pessoas.length; i++) {
-    console.log(pessoas[i].saudacao());
+    pessoas[i].saudacao();
 }
