@@ -1,0 +1,8 @@
+float ValorICMS(float fltValor, float fltAliquota)
+{
+    float fltValorICMS;
+
+    fltValorICMS = (fltValor * fltAliquota) / 100;
+
+    return fltValorICMS;
+}
