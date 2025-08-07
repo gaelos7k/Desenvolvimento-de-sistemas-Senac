@@ -1,3 +1,4 @@
+//Função que não retorna valor, declara com tipo void
 void DesenhaLinha(intTamanho)
 
 {
