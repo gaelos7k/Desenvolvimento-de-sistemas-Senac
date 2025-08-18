@@ -2,7 +2,7 @@
 
 while True:
 
-    print('Escolha a operação que deseja realizar: ')
+    print('Escolha a opção no menu para a operação que deseja realizar: ')
     operation = input(
         '[1] +\n'
         '[2] -\n'
