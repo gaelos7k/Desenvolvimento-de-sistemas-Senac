@@ -1,3 +1,5 @@
+# Validador de Senha
+
 while True:
     senha = input("Insira a senha:")
 

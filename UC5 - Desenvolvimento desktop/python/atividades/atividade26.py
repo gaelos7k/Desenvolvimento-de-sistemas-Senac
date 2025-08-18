@@ -1,3 +1,5 @@
+# Jogo de Adivinhação
+
 import random
 
 targetNumber = random.randint(1, 100)
