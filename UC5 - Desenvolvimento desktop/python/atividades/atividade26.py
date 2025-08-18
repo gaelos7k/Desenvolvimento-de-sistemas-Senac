@@ -4,13 +4,12 @@ import random
 
 targetNumber = random.randint(1, 100)
 
-number = -1
-
-while number != targetNumber:
+while True:
     number = int(input('Escolha um número entre 0 e 100:'))
 
     if number == targetNumber:
         print('Parabéns, você acertou!')
+        break
     elif number < targetNumber:
         print(f'O número secreto é maior que {number}')
     else:
