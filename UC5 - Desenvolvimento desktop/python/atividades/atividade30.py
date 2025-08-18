@@ -11,19 +11,19 @@ while True:
         '[5] Sair\n'
     )
 
-    if int(operation) == 1:
+    if operation == '1' or operation == '+':
         n1 = float(input('Escolha o primeiro número para a adição: '))
         n2 = float(input('Escolha o segundo número para a adição: '))
         print(f'{n1} + {n2} = {n1 + n2}\n')
-    elif int(operation) == 2:
+    elif operation == '2' or operation == '-':
         n1 = float(input('Escolha o primeiro número para a subtração: '))
         n2 = float(input('Escolha o segundo número para a subtração: '))
         print(f'{n1} - {n2} = {n1 - n2}\n')
-    elif int(operation) == 3:
+    elif operation == '3' or operation == '*':
         n1 = float(input('Escolha o primeiro número para a multiplicação: '))
         n2 = float(input('Escolha o segundo número para a multiplicação: '))
         print(f'{n1} * {n2} = {n1 * n2}\n')
-    elif int(operation) == 4:
+    elif operation == '4' or operation == '/':
         n1 = float(input('Escolha o primeiro número para a divisão: '))
         n2 = float(input('Escolha o segundo número para a divisão: '))
         print(f'{n1} / {n2} = {n1 / n2}\n')
