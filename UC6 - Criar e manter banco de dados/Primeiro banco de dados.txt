@@ -1,0 +1,18 @@
+CREATE TABLE usuários 
+( 
+ id_usuario INT PRIMARY KEY,  
+ nome VARCHAR(100),  
+ email VARCHAR(100),  
+ senha VARCHAR(100)
+); 
+
+CREATE TABLE comentarios 
+( 
+ id_comentarios INT PRIMARY KEY,  
+ comentario VARCHAR(100),  
+ data DATE,  
+ hora VARCHAR(100),  
+ idusuários INT 
+); 
+
+ALTER TABLE comentarios ADD FOREIGN KEY(idusuários) REFERENCES usuários (idusuários)

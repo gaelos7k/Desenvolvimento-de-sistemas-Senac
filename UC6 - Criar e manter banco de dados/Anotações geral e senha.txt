@@ -1,0 +1,50 @@
+brmodelo - modelagem de banco de dados
+q1w2e3 - Senha do banco de dados
+
+Passos para a modelagem completa de um banco de dados
+1 - Modelo conceitual
+2 - Modelo lógico
+3 - Modelo físico
+
+Criação do minimundo seria uma espécie de levantamento de requisitos para entender as entidades do banco de dados
+
+Abstração no banco de dados é abstrair algumas informações peguemos funcionário por exemplo: Uma tabela funcionários pode envolver o garçom, caixa e cozinheiro. Não há necessidade de uma tabela para cada funcionário.
+
+SGDB (Sistema de gerenciamento de banco de dados) - Usaremos o MySQL, mongoDB ou firebase
+
+Para um SGDB ser completo le precisa de dados, software, hardware e usuários.
+
+Dentro do SGDB é possível programar uma rotina de backup para segurança dos dados, visto que empresas já faliram por não ter banco de dados com backup.
+
+ 
+MySQL 8.0 Command Line Client
+PK = Primary Key
+FK = Foreign Key
+
+Comandos: 
+
+SHOW DATABASES; - Mostra os bancos de dados já criados no mySQL.
+CREATE DATABASE gabriel; - Criação de um banco de dados com meu nome.
+SHOW TABLES; - Mostra as tabelas do banco de dados.
+
+INSERT INTO `usuários` (params1, params2)
+	VALUES (1, 'nome'); - Inserir dados em uma tabela específica com os parametros passados.
+
+DESCRIBE `usuários`; - Ver as colunas da tabela e especificar a tabela entre crases duplas.
+SELECT * FROM usuários; - Mostrar os valores inseridos na tabela
+RENAME  'nome da tabela'  TO  'nov nome da tabela'; - Renomeia a tabela
+SELECT * FROM  'nome tabela' WHERE id_usuarui = 456; - Seleciona todas informações de um usuário com id específica.
+SELECT id_usuario FROM usuarios; - Seleciona todos ID de usuários apenas.
+UPDATE usuarios SET id_usuario = 4 WHERE nome ='Beatriz'; - Atualizar o id_usuario para o valor setado onde o nome é 'Beatriz'.
+ ALTER TABLE usuarios RENAME COLUMN id_usuario TO id_usuarios; - Renomeando uma tabela, apenas trocando o nome.
+
+SELECT c.comentario, u.nome FROM comentarios c INNER JOIN usuarios u ON c.id_usuarios = u.id_usuarios WHERE c.id_usuarios = 1; - Selecionando com alias as duas tabelas para referencias e conseguir dados das duas tabelas a partir de id_usuarios que é comum nas duas tabelas.
+SELECT c.id_usuarios, c.comentario, u.id_usuarios, u.nome, u.email FROM comentarios c INNER JOIN usuarios u ON c.id_usuarios = u.id_usuarios WHERE c.id_usuarios = 1; - A ordem selecionada impacta na saída do console. Nesse caso estou selcionaod o id_usuarios na tabela comentarios tambem para comparar com id_usuaruis de u.id_usuarios.
+
+
+
+
+
+
+
+
