@@ -28,3 +28,4 @@ SELECT Name FROM country ORDER BY Name DESC; - Selecionando a coluna nomes da ta
 SELECT Name, LifeExpectancy FROM country ORDER BY LifeExpectancy DESC; - Ordenar nome e expectativa de vida por ordem descendente, então começa do país que tem a maior expectativa de vida.
 
 SELECT Name, Population FROM city ORDER BY Population DESC; - Nome e poupulação da cidade mais populosa.
+
