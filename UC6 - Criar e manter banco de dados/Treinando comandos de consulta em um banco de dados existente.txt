@@ -29,3 +29,11 @@ SELECT Name, LifeExpectancy FROM country ORDER BY LifeExpectancy DESC; - Ordenar
 
 SELECT Name, Population FROM city ORDER BY Population DESC; - Nome e poupulação da cidade mais populosa.
 
+SELECT Name, SurfaceArea, GovernmentForm, HeadOfState, IndepYear FROM country WHERE IndepYear IS NOT NULL ORDER BY IndepYear ASC; - Consultando algumas colunas da tabela country e condicionando a aparecer valores diferentes de null e de formas ascednente.
+
+SELECT CountryCode, Language FROM countrylanguage WHERE Language = 'Portuguese'; - Consultando código e língua dos países que falam português.
+
+SELECT c.CountryCode, c.Language, n.Name FROM countrylanguage c INNER JOIN country n  ON n.code = c.CountryCode WHERE Language = 'Portuguese'; - Consultando código do páis, 
+
+
+
