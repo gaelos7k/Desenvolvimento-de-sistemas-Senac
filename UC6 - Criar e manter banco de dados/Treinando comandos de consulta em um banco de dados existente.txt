@@ -1,0 +1,30 @@
+Consultando um banco de dados já existente.
+Para treinamento dos comandos SQL.
+
+ESCREVER COM LETRAS MAISCULAS NO MYSQL É UMA CONVENÇÃO DE ESTILO. TORNA O SCRIPT MAIS PROFISSIONAL, MAIS FACIL DE LER E DIFERENCIA PALAVRAS CHAVES DE IDENTIFICADORES(NOMES DE TABELAS E COLUNAS)
+
+SELECT ROWS  para ver algumas informações sobre a tabela
+
+SELECT * FROM city WHERE CountryCode = 'BRA' and District = 'Minas Gerais'; - Comando AND para colocar mais uma condição para consulta. 
+
+SELECT * FROM city WHERE CountryCode = 'BRA' AND District = 'Minas Gerais' AND Name = 'Pouso Alegre' OR Name = 'Belo Horizonte'; - Comando OR para verificar uma condição ou outra.
+
+SELECT Name FROM city WHERE District = 'Minas Gerais' AND Population > 150000; - Selecionando a coluna nomes e consultando as cidades do estado de Minas Gerais onde a população é maior que 150mil habitantes
+
+SELECT Name, Population FROM country WHERE Continent = 'South America'; - Usando , para consultar mais de uma tabela ao mesmo tempo. Consultando o nome e a população dos países da américa do sul.
+
+SELECT Name, Population FROM country WHERE Continent like 'South America'; - Like funcionado tipo um operador de igualdade.
+
+SELECT Name, Population FROM country WHERE Name like 'B%'; - Consultando nome e população dos paises que começam com a letra B, é necessário colocar % dentro das aspas simples após o like.
+
+SELECT Name, LifeExpectancy FROM country WHERE LifeExpectancy < 40; - Consultando nomes e expectatica de vida dos países onde a expectativa de vida é menor que 40. Usamos operador de comparação.
+
+SELECT COUNT(*) FROM country WHERE Continent = 'Asia'; - Usando comando COUNT para visualizar o número de países que existem no continente asiátioco.
+
+SELECT Name FROM country ORDER BY Name ASC;- Selecionando a coluna nomes da tabela paises e ordenando os nomes por ordem alfabética(ascendente).
+
+SELECT Name FROM country ORDER BY Name DESC; - Selecionando a coluna nomes da tabela paises e ordenando os nomes por ordem alfabética inversa (descendente).
+
+SELECT Name, LifeExpectancy FROM country ORDER BY LifeExpectancy DESC; - Ordenar nome e expectativa de vida por ordem descendente, então começa do país que tem a maior expectativa de vida.
+
+SELECT Name, Population FROM city ORDER BY Population DESC; - Nome e poupulação da cidade mais populosa.
