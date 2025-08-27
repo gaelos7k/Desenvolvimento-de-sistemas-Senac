@@ -1,10 +1,12 @@
+# Importando funcionalidades de 2 bibliotecas padrões
 from random import choice
 from string import ascii_letters, digits, punctuation
 
 
+# Tipando parametros e retorno da função
 def random_password(length: int, letters: bool, number: bool, symbols: bool) -> str:
     resultado = ''
-
+    # Estrutura condicional que checará como o usuário irá gerar a senha
     if letters and number and symbols:
         seq = ascii_letters + digits + punctuation
     elif not letters and number and symbols:
@@ -22,6 +24,7 @@ def random_password(length: int, letters: bool, number: bool, symbols: bool) -> 
     else:
         return "Erro: você deve escolher pelo menos um tipo de caractere!"
 
+    # Loop para que o tamanho da senha seja conforme informado pelo usuário
     for i in range(length):
         resultado += choice(seq)
 
