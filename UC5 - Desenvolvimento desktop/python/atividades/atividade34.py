@@ -24,4 +24,5 @@ def cpf_validation(cpf: str) -> str:
 
     return cpf
 
+
 print(cpf_validation(input('CPF: ')))
