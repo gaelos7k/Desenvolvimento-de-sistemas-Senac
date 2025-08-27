@@ -1,11 +1,9 @@
 def cpf_validation(cpf: str) -> str:
-    cpf_numbers = []
 
     # Atribuindo apenas os valores numéricos ao CPF
     for digit in cpf:
         if digit.isdigit():
-            cpf_numbers.append(digit)
-    cpf = ''.join(cpf_numbers)
+            cpf += digit
 
     # CPF deve conter 11 digitos
     if len(cpf) != 11:
@@ -24,4 +22,6 @@ def cpf_validation(cpf: str) -> str:
         if int(cpf[i]) != digit:
             return "CPF inválido: digitos verificadores inválidos!"
 
-    return 'CPF válido'
+    return cpf
+
+print(cpf_validation(input('CPF: ')))
