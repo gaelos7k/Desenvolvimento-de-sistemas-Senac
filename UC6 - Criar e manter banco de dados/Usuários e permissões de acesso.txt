@@ -1,0 +1,26 @@
+CREATE USER 'gabriel'@'localhost' identified by 'teste123';
+GRANT ALL ON `gabriel`.* TO 'gabriel'@'localhost';
+
+Criando usuário gabriel no banco de dados e dando permissão completa.
+
+ CREATE USER 'estagiario'@'localhost' IDENTIFIED BY 'teste123'; - Criando usuario estagiario no banco de dados com a senha teste123
+GRANT SELECT ON gabriel.usuarios TO 'estagiario'@'localhost'; - Permitindo acesso SELECT ao usuario estagiario no banco gabriel na tabela usuarios
+
+
+USE gabriel; - Usar o banco para tentar comandos não permitidos
+DROP TABLE usuarios; - Tentando deletar tabela usuarios sem permissao ao comando DROP
+DELETE FROM usuarios WHERE id = 5; Tentando deletar um usuario pelo id sem permissao ao comando DELETE
+
+no cmd 'ipconfig' - verificar meu ip da rede.
+
+GRANT ALTER ON gabriel.* TO 'estagiario'@'localhost';		- Permitindo usuário estagiário alterar a tabela
+USE gabriel;						-   Usando banco de dados gabriel
+ALTER TABLE usuarios ADD COLUMN endereco VARCHAR(100);	-  Alterando a tabela usuário e inserindo a coluna endereço
+
+
+USE gabriel;
+UPDATE usuarios SET endereco = 'Rua 40, número 40' WHERE id_usuarios = 4;
+UPDATE usuarios SET endereco = 'Rua 50, número 50' WHERE id_usuarios = 5;
+SELECT * FROM usuarios;
+**Foi necessário permir o usuário acessar UPDATE e SELECT - Para dar update nas informações de cada usuário pelo seu ID**
+
