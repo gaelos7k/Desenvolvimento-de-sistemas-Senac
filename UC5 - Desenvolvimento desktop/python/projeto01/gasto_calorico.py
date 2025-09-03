@@ -1,3 +1,4 @@
+# Teste
 def calcula_gasto_calorico(atividade, tempo, peso):
     met = 0
     match atividade:

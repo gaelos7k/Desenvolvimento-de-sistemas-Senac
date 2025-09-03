@@ -1,5 +1,4 @@
-# IMC = peso(kg) / (altura(m) x altura (m))
-
+# Teste
 
 def calcula_imc(peso, altura):
     if isinstance(peso, str):
