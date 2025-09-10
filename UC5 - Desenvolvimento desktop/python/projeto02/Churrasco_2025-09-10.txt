@@ -1,0 +1,5 @@
+Carne - 5
+Carvão - 1
+Cerveja - 24
+Refrigerante - 6
+Pão de Alho - 10
