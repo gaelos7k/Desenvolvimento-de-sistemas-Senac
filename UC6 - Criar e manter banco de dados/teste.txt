@@ -1,0 +1,36 @@
+TRIGGER -  É um gatilho no MySQL - Ao fazer determinado comando você pode disparar de forma automática outro tipo de execução dentro do MySQL, como ao inserir um usuário em uma tabela adicionar também em uma tabela auxiliar.
+
+DELIMETER //
+
+CREATE TRIGGER copiar_cliente_para_auxiliar
+AFTER INSERT ON cliente
+FOR EACH ROW
+BEGIN
+	INSERT INTO ClienteAuxiliar (id_cliente, nome, id_pedido)
+	VALUES (NEW.id_cliente, NEW.nome, NEW.id_pedido);
+END;
+//
+
+DELIMETER;
+
+
+*___________________________________________________________________________________________*
+USE restaurante;
+
+SELECT c.nome AS cliente, v.nome AS vendedor, p.id_pedido, p.dataHora, pr.nome AS produto, pr.valor, pr.descricao
+
+FROM Pedido p
+
+JOIN Cliente c ON c.id_pedido = p.id_pedido
+JOIN Vendedor v ON v.id_pedido = p.id_pedido
+JOIN conter ct ON p.id_pedido = ct.id_pedido
+JOIN Produto pr ON ct.id_produto = pr.id_produto
+
+ORDER BY p.id_pedido;
+
+USANDO O BANCO DE DADOS RESTAURANTE, O QUAL FOI LIBERADO ACESSO A TODOS PRIVILEGIOS PARA O USUARIO ESTAGIARIO,
+SELECIONANDO OS DADOS COM ALIAS E DANDO JOIN EM TODAS AS TABELAS E ORDENANDO PELO ID DO PEDIDO.
+
+*_______________________________________________________________________________________________________________*
+	
+
