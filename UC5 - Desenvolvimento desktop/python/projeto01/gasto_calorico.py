@@ -9,4 +9,4 @@ def calcula_gasto_calorico(atividade, tempo, peso):
     print(gasto_calorico)
 
 
-calcula_gasto_calorico('corrida', 70, 1)
+calcula_gasto_calorico('corrida', 1, 70)
