@@ -1,25 +1,30 @@
-# Projeto 03 — Gerenciador de tarefas (camadas)
+# Projeto 03 - Gerenciador de Tarefas
 
-Visão geral
+Este projeto tem como objetivo auxiliar no gerenciamento de tarefas do dia a dia, permitindo cadastrar, listar, marcar como concluídas e salvar tarefas em arquivo.
 
-`projeto03` é um exemplo de arquitetura em camadas (domain, infrastructure, application) implementando um gerenciador/lista de tarefas (to-do). Serve como referência para padrões simples de separação de responsabilidades.
+## Funcionalidades
 
-Estrutura importante
+- Adicionar novas tarefas com descrição.
+- Listar todas as tarefas cadastradas.
+- Marcar tarefas como concluídas.
+- Salvar a lista de tarefas em um arquivo `.txt`.
 
-- `domain/entities/Tarefa.py` — definição da entidade `Tarefa`.
-- `infrastructure/repositories/RepositorioArquivo.py` — persistência em arquivo (implementação simples).
-- `application/usecases/ListarTarefasUseCase.py` — caso de uso para listar tarefas.
+## Como executar
 
-Como executar (exemplo)
+Execute o arquivo principal do projeto:
 
-1. Criar e ativar um ambiente virtual:
-
-```powershell
-python -m venv venv; .\venv\Scripts\Activate.ps1
+```sh
+python main.py
 ```
 
-2. Executar módulos de teste ou criar um `main.py` que utilize os usecases. Exemplo (linha de comando):
+## Estrutura dos arquivos
 
-```powershell
-python -m projeto03.application.usecases.ListarTarefasUseCase
-```
+- `main.py`: Código principal do projeto, contendo as classes e exemplos de uso.
+
+## Exemplo de saída
+
+Ao executar, será possível cadastrar tarefas, visualizar o status (pendente/concluída) e gerar um arquivo de texto com todas as tarefas.
+
+---
+
+Projeto desenvolvido para fins didáticos na UC5 do curso Técnico em Desenvolvimento de Sistemas.
