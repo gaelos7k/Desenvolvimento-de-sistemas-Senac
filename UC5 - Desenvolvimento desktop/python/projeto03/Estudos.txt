@@ -1,2 +1,2 @@
-Estudar - [Pendente]
-Ler - [Concluída]
+Estudar Python - [Pendente]
+Estudar HTML - [Concluída]

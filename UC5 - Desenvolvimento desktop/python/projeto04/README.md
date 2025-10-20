@@ -1,19 +1,36 @@
-# Projeto 04 — Aplicação exemplo
+# Projeto 04 - Sistema de Biblioteca
 
-Visão geral
+Este projeto implementa um sistema simples para gerenciamento de biblioteca, permitindo o cadastro de leitores e livros, além do controle de empréstimos e devoluções.
 
-`projeto04` contém uma aplicação Python com `main.py` e `app.py`. Pode ser usado como base para exercícios de integração e exploração de bibliotecas.
+## Funcionalidades
 
-Como executar
+- Cadastrar, consultar, atualizar e remover leitores.
+- Cadastrar, consultar, atualizar e remover livros.
+- Verificar disponibilidade de livros.
+- Registrar empréstimos e devoluções de livros.
 
-1. Criar e ativar um ambiente virtual:
+## Como executar
 
-```powershell
-python -m venv venv; .\venv\Scripts\Activate.ps1
-```
+Execute o arquivo principal do projeto:
 
-2. Executar:
-
-```powershell
+```sh
 python main.py
 ```
+
+O código inclui exemplos de uso das classes, mostrando como cadastrar leitores e livros, realizar empréstimos e devoluções.
+
+## Estrutura dos arquivos
+
+- `main.py`: Código principal do projeto, contendo as classes `Leitor`, `Livro` e `Emprestimo`, além de exemplos de uso.
+
+## Exemplo de saída
+
+Ao executar, o sistema irá:
+
+- Cadastrar leitores e livros.
+- Consultar informações dos livros e leitores.
+- Registrar empréstimos e devoluções, atualizando o status dos livros.
+
+---
+
+Projeto desenvolvido para fins didáticos na UC5 do curso Técnico em Desenvolvimento de Sistemas.

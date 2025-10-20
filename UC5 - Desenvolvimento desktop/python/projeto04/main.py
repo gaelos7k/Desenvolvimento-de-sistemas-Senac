@@ -1,14 +1,12 @@
 import datetime
 
-
 class Leitor:
     leitores = []
-
     def __init__(self, cod, nome, telefone):
         self.cod = cod
         self.nome = nome
         self.telefone = telefone
-        # self.leitor = []
+
 
     def cadastrar_leitor(self):
         self.leitores.append(self)
@@ -18,11 +16,12 @@ class Leitor:
             if cod == leitor.cod:
                 leitor.nome = nome
                 leitor.telefone = telefone
-
+    
     def deletar_leitor(self, cod):
         for leitor in self.leitores:
             if cod == leitor.cod:
                 self.leitores.remove(leitor)
+                
 
     def consultar_leitor(self, cod):
         for i in self.leitores:
@@ -32,7 +31,6 @@ class Leitor:
 
 class Livro:
     livros = []
-
     def __init__(self, isbn, titulo, autores, edicao, qtd_exemplares):
         self.isbn = isbn
         self.titulo = titulo
@@ -44,7 +42,7 @@ class Livro:
 
     def cadastrar_livro(self):
         self.livros.append(self)
-
+    
     def atualizar_livro(self, isbn, titulo, autores, edicao, qtd_exemplares):
         for livro in self.livros:
             if isbn == livro.isbn:
@@ -52,17 +50,16 @@ class Livro:
                 livro.autores = autores
                 livro.edicao = edicao
                 livro.qtd_exemplares = qtd_exemplares
-
+    
     def deletar_livro(self, isbn):
         for livro in self.livros:
             if isbn == livro.isbn:
                 self.livros.remove(livro)
-
+    
     def consultar_livro(self, isbn):
         for livro in self.livros:
             if isbn == livro.isbn:
-                print(
-                    f'ISBN: {livro.isbn}\nTítulo: {livro.titulo}\nAutores: {livro.autores}\nEdição: {livro.edicao}\nExemplares: {livro.qtd_exemplares}')
+                print(f'ISBN: {livro.isbn}\nTítulo: {livro.titulo}\nAutores: {livro.autores}\nEdição: {livro.edicao}\nExemplares: {livro.qtd_exemplares}')
                 self.verificar_disponibilidade()
 
     def verificar_disponibilidade(self):
@@ -99,31 +96,32 @@ class Emprestimo:
             self.livro.status = True
 
 
+
 # # exemplo de uso da classe Leitor
-# leitor1 = Leitor(1, "João", "1234-5678")
+# leitor1 = Leitor(1, "João", "1234-5678") 
 # leitor1.cadastrar_leitor()
 # leitor2 = Leitor(2, "Maria", "9876-5432")
 # leitor2.cadastrar_leitor()
-#
-# # Leitor.consultar_leitor(Leitor, 1)
-# # Leitor.consultar_leitor(Leitor, 2)
-# # Leitor.atualizar_leitor(Leitor, 2, 'Maria José', '0000-0000')
-# # Leitor.consultar_leitor(Leitor, 2)
-#
+
+# #Leitor.consultar_leitor(Leitor, 1)
+# #Leitor.consultar_leitor(Leitor, 2)
+# #Leitor.atualizar_leitor(Leitor, 2, 'Maria José', '0000-0000')
+# #Leitor.consultar_leitor(Leitor, 2)
+
 # # exemplo de uso da classe Livro
 # livro1 = Livro(122456, 'Programação com Python', 'João da Silva', 1, 1)
 # livro1.cadastrar_livro()
-#
+
 # print("____________________________________________________________________")
 # livro1.consultar_livro(122456)
-#
+
 # emprestimo1 = Emprestimo(livro1, leitor1)
 # emprestimo1.registrar_emprestimo()
-#
+
 # print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 # livro1.consultar_livro(122456)
-#
+
 # emprestimo1.registrar_devolucao()
-#
+
 # print("____________________________________________________________________")
 # livro1.consultar_livro(122456)
